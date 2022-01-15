@@ -1,0 +1,6 @@
+{
+  "watch": ["src", "nodemon.json", "package.json", "knexfile.ts", "tsconfig.json", ".env"], 
+  "ext": "ts",
+  "ignore": ["dist", "src/**/*.test.ts"],
+  "exec": "ts-node -r dotenv/config -r ./scripts/verify-dotenv  -r tsconfig-paths/register ./src/server.ts"
+}
